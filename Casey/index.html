@@ -23,6 +23,17 @@
       <h2>대중교통</h2>
     </a>
 
+    <button id="btn">결과 확인하기</button>
+    <p id="text"></p>
+
+    <script>
+	    var showBtn = document.getElementById("btn");	// 아이디가 "btn"인 요소를 선택함.
+	    showBtn.addEventListener("click", showText);	// 선택한 요소에 click 이벤트 리스너를 등록함.
+	    function showText() {
+				document.getElementById("text").innerHTML = "원 페이지 카페";
+			}
+    </script>
+
   </body>
 
 </html>
